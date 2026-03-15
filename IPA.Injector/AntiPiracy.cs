@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -17,6 +17,7 @@ namespace IPA.Injector
 
         public static bool IsInvalid(string path)
         {
+            return false;
             var dataPlugins = Path.Combine(GameVersionEarly.ResolveDataPath(path), "Plugins");
 
             // try
