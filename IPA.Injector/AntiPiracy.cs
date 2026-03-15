@@ -36,8 +36,6 @@ namespace IPA.Injector
             // }
             // catch { }
 
-            // To the guys that maintain a fork that removes this code: I would greatly appreciate if we could talk
-            //   about this for a little bit. Please message me on Discord at DaNike#6223
             return Directory.EnumerateFiles(path, "*").Any(IsInvalidFile) ||
                    Directory.EnumerateFiles(dataPlugins, "*", SearchOption.AllDirectories).Any(IsInvalidFile);
         }
